@@ -9,7 +9,7 @@ namespace DebugTools
         public override string Name => "Debug Tools";
         public override string Author => "Logic_Gun";
         //public override Version RequiredExiledVersion => new(9, 0, 0);
-        public override Version Version => new(1, 0, 1);
+        public override Version Version => new(1, 0, 2);
 
         public static Plugin Instance;
 
