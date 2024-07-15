@@ -26,7 +26,7 @@ namespace DebugTools.Commands
                 return false;
             }
 
-            if (Enum.TryParse(arguments.At(1), out LocalPositionType localPositionType))
+            if (Enum.TryParse(arguments.At(0), out LocalPositionType localPositionType))
             {
                 pl.SessionVariables["debugtools_localPosition_type"] = localPositionType;
 

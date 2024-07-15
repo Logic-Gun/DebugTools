@@ -11,7 +11,7 @@ namespace DebugTools.Enumerators
     {
         public static IEnumerator<float> Start()
         {
-            while (!Round.IsLobby)
+            while (!Round.IsEnded)
             {
                 Vector3? localPosition;
                 StringBuilder sb;
@@ -55,6 +55,7 @@ namespace DebugTools.Enumerators
                     sb = new();
 
                     sb.Append(Plugin.Instance.Translation.PointInCursor);
+                    sb.Replace("%s%", player.CurrentRoom.Type.ToString() ?? Plugin.Instance.Translation.ErrorEmpty);
                     sb.Replace("%s%", localPosition.ToString() ?? Plugin.Instance.Translation.ErrorEmpty);
 
                     player.Broadcast(1, sb.ToString(), shouldClearPrevious: true);

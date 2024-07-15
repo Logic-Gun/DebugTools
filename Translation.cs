@@ -10,6 +10,6 @@ namespace DebugTools
         public string Error { get; set; } = "An error has occurred, please try again.";
         public string ErrorEmpty { get; set; } = "Empty value";
         public string Successfully { get; set; } = "You have successfully changed the state to: %s%.";
-        public string PointInCursor { get; set; } = "<color=yellow>The local position of the point in the cursor: %s%</color>";
+        public string PointInCursor { get; set; } = "<color=yellow>The local position of the point in the cursor (%s%): %s%</color>";
     }
 }
